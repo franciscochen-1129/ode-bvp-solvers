@@ -1,5 +1,4 @@
 function [N_values, h_values, solutions] = Finite_difference(P, Q, R, a, b, alpha, beta, Nmin, Nmax)
-% bvp_fd_no_exact
 % Finite difference solver for the BVP:
 %   u''(x) + P(x) u'(x) + Q(x) u(x) = R(x),   a < x < b
 %   u(a) = alpha,  u(b) = beta
