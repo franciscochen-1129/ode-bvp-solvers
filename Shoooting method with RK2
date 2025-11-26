@@ -1,5 +1,4 @@
 function [x, y, s_final, it] = shooting_rk2(F, a, b, alpha, beta, n, s0, s1, tol, maxit)
-% shooting_rk2_scalar
 % Solve a second-order scalar BVP
 %     y'' = F(x, y, y')
 % with boundary conditions
