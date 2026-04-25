@@ -18,9 +18,6 @@ The repository is intentionally lightweight and classroom-friendly: each method 
 ├── finite_difference_bvp.m  % standard public entry point
 ├── rayleigh_ritz_bvp.m      % standard public entry point
 ├── shooting_bvp_rk2.m       % standard public entry point
-├── Finite_difference.m      % legacy compatibility wrapper
-├── RR.m                     % legacy compatibility wrapper
-├── shooting_rk2.m           % legacy compatibility wrapper
 └── README.md
 ```
 
@@ -100,21 +97,15 @@ F = @(x, y, yp) -y;
 plot(x, y, 'LineWidth', 1.5);
 ```
 
-## Backward Compatibility
+## Public API
 
-Standard public names:
+Main entry points:
 
 - `finite_difference_bvp(...)`
 - `rayleigh_ritz_bvp(...)`
 - `shooting_bvp_rk2(...)`
 
-Legacy aliases are still preserved:
-
-- `Finite_difference(...)`
-- `RR(...)`
-- `shooting_rk2(...)`
-
-All top-level entry points delegate to the package implementations in `+odebvp/`.
+These top-level functions delegate to the package implementations in `+odebvp/`.
 
 ## Examples And Tests
 
