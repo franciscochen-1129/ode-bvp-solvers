@@ -1,0 +1,9 @@
+*.asv
+*.m~
+*.fig
+*.mlx.autosave
+*.mat
+
+results/
+output/
+tmp/
