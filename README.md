@@ -1,12 +1,12 @@
-# ODE-BVP Numerical Methods
+# ode-bvp-solvers
 
-Compact MATLAB implementations of three standard numerical methods for two-point boundary value problems (BVPs):
+`ode-bvp-solvers` is a compact MATLAB repository for three standard numerical methods for two-point boundary value problems (BVPs):
 
 - `finite_difference_bvp` for linear second-order BVPs
 - `rayleigh_ritz_bvp` for variational / FEM-style solves
 - `shooting_bvp_rk2` for shooting with RK2 time stepping and secant updates
 
-The repository is intentionally lightweight and classroom-friendly: each method is implemented in a small, readable MATLAB function, and the repo includes smoke tests and runnable examples.
+The project is intentionally lightweight and classroom-friendly: each method is implemented in a small, readable MATLAB function, and the repository includes smoke tests and runnable examples.
 
 ## Repository Layout
 
@@ -62,7 +62,7 @@ using:
 
 ## Quick Start
 
-Clone the repository and add it to the MATLAB path:
+Clone `ode-bvp-solvers` and add it to the MATLAB path:
 
 ```matlab
 addpath(genpath(pwd));
